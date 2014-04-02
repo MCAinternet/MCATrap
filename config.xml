@@ -1,4 +1,4 @@
- <widget id="com.example.hello" version="0.0.1">
+<widget id="com.example.hello" version="0.0.1">
         <name>PhoneGapSuperHappyFunTime</name>
         <description>
             Happy Time
@@ -6,12 +6,5 @@
         <author email="dev@callback.apache.org" href="http://phonegap.com">
             Apache Cordova Team
         </author>
-        
-        <access origin="*" />
-        <preference name="Fullscreen" value="true" />
-        <preference name="WebViewBounce" value="true" />
-        
-        <gap:plugin name="org.apache.cordova.media" version="0.2.8" />
-            
-            
-    </widget>
+
+</widget>
