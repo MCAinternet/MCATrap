@@ -1,4 +1,12 @@
- <widget id="com.example.hello" version="0.0.1">
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.mcainternet.itsatrap"
+        versionCode = "10" 
+        version     = "0.1" >
+
+	<preference name="phonegap-version" value="3.1.0" />
+
         <name>PhoneGapSuperHappyFunTime</name>
         <description>
             Happy Time
@@ -6,8 +14,10 @@
         <author email="dev@callback.apache.org" href="http://phonegap.com">
             Apache Cordova Team
         </author>
-        <content src="index.html" />
-        <access origin="*" />
-        <preference name="Fullscreen" value="true" />
-        <preference name="WebViewBounce" value="true" />
-    </widget>
+        
+        <icon src="Phonegaplogo.png" width="57" height="57"></icon>
+        <gap:splash src="splashscreen.png"/>
+
+	<!-- <gap:plugin name="org.apache.cordova.media" version="0.2.8" /> -->
+
+</widget>

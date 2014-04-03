@@ -25,7 +25,7 @@
         // Play audio
         //
         function playAudio(src) {
-            if (my_media == null) {
+            if (my_media === null) {
                 // Create Media object from src
                 my_media = new Media(src, onSuccess, onError);
             } // else play current audio
@@ -33,7 +33,7 @@
             my_media.play();
 
             // Update my_media position every second
-            if (mediaTimer == null) {
+            if (mediaTimer === null) {
                 mediaTimer = setInterval(function() {
                     // get my_media position
                     my_media.getCurrentPosition(
