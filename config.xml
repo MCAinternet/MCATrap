@@ -19,6 +19,7 @@
         <gap:splash src="splashscreen.png"/>
 
 	<gap:plugin name="org.apache.cordova.media" version="0.2.8" />
+<<<<<<< HEAD
     
     (in app/res/xml/config.xml)
     <feature name="File">
@@ -31,5 +32,7 @@
 
 (in app/AndroidManifest.xml)
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+=======
+>>>>>>> d520abeaf8e7cd60ca0ac2107a9b5307559b2a35
 
 </widget>
