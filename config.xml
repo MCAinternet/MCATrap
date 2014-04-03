@@ -18,6 +18,6 @@
         <icon src="Phonegaplogo.png" width="57" height="57"></icon>
         <gap:splash src="splashscreen.png"/>
 
-	<!-- <gap:plugin name="org.apache.cordova.media" version="0.2.8" /> -->
+	<gap:plugin name="org.apache.cordova.media" version="0.2.8" />
 
 </widget>
