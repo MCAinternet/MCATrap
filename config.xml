@@ -19,5 +19,17 @@
         <gap:splash src="splashscreen.png"/>
 
 	<gap:plugin name="org.apache.cordova.media" version="0.2.8" />
+    
+    (in app/res/xml/config.xml)
+    <feature name="File">
+    <param name="android-package" value="org.apache.cordova.FileUtils" />
+    </feature>
+    <feature name="FileTransfer">
+    <param name="android-package" value="org.apache.cordova.FileTransfer" />
+    </feature>
+
+
+(in app/AndroidManifest.xml)
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </widget>
