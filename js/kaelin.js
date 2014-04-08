@@ -29,6 +29,6 @@ setTimeout(function () {
 ,500 ); //End setTimeoutfunction
 
 
-
+playAudio('http://www.ibuylocalretailers.com/notify2.mp3');
 		
 }
