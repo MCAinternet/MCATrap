@@ -2,12 +2,16 @@ function test() {
 
 setTimeout(function () {
  $("#imageone").css("visibility","hidden");
+ $("#imageopen").css("visibility","visible"); 
 	setTimeout(function () {
 	 $("#imagetwo").css("visibility","hidden");
+	 $("#imageopen").css("visibility","hidden");
 			setTimeout(function () {
 			 $("#imagethree").css("visibility","hidden");
+			 $("#imageopen").css("visibility","visible");
 				setTimeout(function () {
 				$("#imagefour").css("visibility","hidden");
+				$("#imageopen").css("visibility","hidden");
 					setTimeout(function () {
 						$("#imageone").css("visibility","visible");
 						$("#imagetwo").css("visibility","visible");
