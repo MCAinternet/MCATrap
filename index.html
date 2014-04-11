@@ -18,19 +18,20 @@
         // device APIs are available
         //
         function onDeviceReady() {
-			// playAudio("http://www.ibuylocalretailers.com/notify2.mp3");
+			playAudio("http://www.ibuylocalretailers.com/notify2.mp3");
             // playAudio("itsATrap.mp3");
         }
 
-            // Wait for device API libraries to load
-    //
-    document.addEventListener("deviceready", onDeviceReady, false);
+        // Wait for device API libraries to load
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
 
         // Phonegap File Object 
         // device APIs are available
         //
         function onDeviceReady() {
             // window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+            //is this right?
         }
     
 
@@ -115,7 +116,7 @@
         
       </head>
       <body>
-        <a href="#" class="btn large" onclick="playAudio(/android_assets/www/itsATrap.mp3);">Play Audio</a>
+        <a href="#" class="btn large" onclick="playAudio(/assets/www/itsATrap.mp3);">Play Audio</a>
         <!-- <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
         <a href="#" class="btn large" onclick="stopAudio();">Stop Playing Audio</a>
         <p id="audio_position"></p> -->
