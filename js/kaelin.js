@@ -30,6 +30,7 @@ var mediaTimer = null;
 // Play audio
 //
 function playAudio(src) {
+        console.log("my_media is playing and the src is " + src);
     if (my_media === null) {
         // Create Media object from src
         my_media = new Media(src, onSuccess, onError);
