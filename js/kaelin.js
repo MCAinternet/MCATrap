@@ -6,21 +6,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //
 function onDeviceReady() {
 	playAudio("http://www.ibuylocalretailers.com/notify2.mp3");
-    
 }
-
-// Wait for device API libraries to load
-//
-document.addEventListener("deviceready", onDeviceReady, false);
-
-// Phonegap File Object 
-// device APIs are available
-//
-function onDeviceReady() {
-    // window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
-    //is this right?
-}
-
 
 // Audio player
 //
@@ -31,15 +17,13 @@ var mediaTimer = null;
 //
 function playAudio(src) {
         console.log("my_media is playing and the src is " + src);
+        
     if (my_media === null) {
         // Create Media object from src
         my_media = new Media(src, onSuccess, onError);
     } // else play current audio
     // Play audio
     my_media.play();
-    // Testing is my_media being called and if so what is the src
-    if (my_media) {
-        console.log("my_media is playing and the src is " + src);
     }
 
     // Update my_media position every second
@@ -61,7 +45,7 @@ function playAudio(src) {
             );
         }, 1000);
     }
-}
+
 
 // Pause audio
 //
