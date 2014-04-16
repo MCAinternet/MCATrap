@@ -82,11 +82,8 @@ function setAudioPosition(position) {
     document.getElementById('audio_position').innerHTML = position;
 }
 
-
-
-
 function test() {
-    console.log("test() has been called")
+    console.log("test() has been called");
     setTimeout(function () {
     $("#imageone").css("visibility","hidden");
     $("#imageopen").css("visibility","visible"); 
