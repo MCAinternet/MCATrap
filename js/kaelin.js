@@ -16,7 +16,7 @@ var mediaTimer = null;
 // Play audio
 //
 function playAudio(src) {
-        console.log("playAudio():Audio Success and the src is " + src);
+        alert("playAudio():Audio Success and the src is " + src);
         
     // Create Media object from src
     my_media = new Media(src, onSuccess, onError);
@@ -37,7 +37,7 @@ function playAudio(src) {
                 },
                 // error callback
                 function(e) {
-                    console.log("Error getting pos=" + e);
+                    alert("Error getting pos=" + e);
                     setAudioPosition("Error: " + e);
                 }
             );
@@ -66,7 +66,7 @@ function stopAudio() {
 // onSuccess Callback
 //
 function onSuccess() {
-    console.log("playAudio():Audio Success");
+    alert("playAudio():Audio Success");
 }
 
 // onError Callback
@@ -83,7 +83,7 @@ function setAudioPosition(position) {
 }
 
 function test() {
-    console.log("test() has been called");
+    alert("test() has been called");
     setTimeout(function () {
     $("#imageone").css("visibility","hidden");
     $("#imageopen").css("visibility","visible"); 
